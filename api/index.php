@@ -13,7 +13,7 @@
     //$lnk = pg_connect("host=localhost dbname=dbname user=username password=password");
     $lnk = pg_connect($db_host);
     if(!$lnk) die("No connecty, something wrong: server.php line 8");
-    else echo "We've got something"
+    //else echo "We've got something"
 
     mysqli_select_db($lnk, "bns-leaderboard-1") or die ("Failed to select DB");
 
