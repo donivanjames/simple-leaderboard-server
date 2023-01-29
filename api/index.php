@@ -2,11 +2,16 @@
     header("Content-type:application/json");
 
     //please dont hack me this is just for fun
+
+    //$db_connection = pg_connect("host=localhost dbname=dbname user=username password=password");
+
     $db_host="postgres://pausapcx:vxSa5l3ZK_F2lrlMGhyt0XBlYbX7hfWY@batyr.db.elephantsql.com/pausapcx";
     $db_user="pausapcx";
     $db_password="vxSa5l3ZK_F2lrlMGhyt0XBlYbX7hfWY";
 
-    $lnk=mysqli_connect($db_host, $db_user, $db_password);
+    //$lnk=mysqli_connect($db_host, $db_user, $db_password);
+    //$lnk = pg_connect("host=localhost dbname=dbname user=username password=password");
+    $lnk = pg_connect($db_host, $db_name, $db_user, $db_password);
     if(!$lnk) die("No connecty, something wrong: server.php line 8");
 
 
