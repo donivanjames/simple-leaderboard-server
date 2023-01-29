@@ -9,9 +9,8 @@
     $db_user="pausapcx";
     $db_password="vxSa5l3ZK_F2lrlMGhyt0XBlYbX7hfWY";
 
-    //$lnk=mysqli_connect($db_host, $db_user, $db_password);
-    //$lnk = pg_connect("host=localhost dbname=dbname user=username password=password");
-    $lnk=mysqli_connect($db_host, $db_host, $db_user, $db_password);
+
+    $lnk=mysqli_connect($db_host);
     if(!$lnk) die("No connecty");
     //else echo "We've got something"
 
