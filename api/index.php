@@ -5,14 +5,15 @@
 
     //$db_connection = pg_connect("host=localhost dbname=dbname user=username password=password");
 
-    $db_host="postgres://pausapcx:vxSa5l3ZK_F2lrlMGhyt0XBlYbX7hfWY@batyr.db.elephantsql.com/pausapcx";
-    $db_user="pausapcx";
-    $db_password="vxSa5l3ZK_F2lrlMGhyt0XBlYbX7hfWY";
+    $server="elephantsql.com";
+    $user="pausapcx";
+    $password="vxSa5l3ZK_F2lrlMGhyt0XBlYbX7hfWY";
+    $name="pausapcx"
 
 
-    $lnk=mysqli_connect($db_host);
+    $lnk=mysqli_connect($server, $user, $password, $name); // , $db_host, $db_user, $db_password
     if(!$lnk) die("No connecty");
-    //else echo "We've got something"
+    else echo "We've got something"
 
     mysqli_select_db($lnk, "bns-leaderboard-1") or die ("Failed to select DB");
 
