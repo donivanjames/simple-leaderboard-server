@@ -11,8 +11,8 @@
 
     //$lnk=mysqli_connect($db_host, $db_user, $db_password);
     //$lnk = pg_connect("host=localhost dbname=dbname user=username password=password");
-    $lnk = $lnk=mysqli_connect($db_host);
-    if(!$lnk) die("No connecty, something wrong: server.php line 8");
+    $lnk = $lnk=mysqli_connect($db_host, $db_host, $db_user, $db_password);
+    if(!$lnk) die("No connecty");
     //else echo "We've got something"
 
     mysqli_select_db($lnk, "bns-leaderboard-1") or die ("Failed to select DB");
