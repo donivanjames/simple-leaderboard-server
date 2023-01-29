@@ -3,7 +3,7 @@
 
     //please dont hack me this is just for fun
     $db_host="postgres://pausapcx:vxSa5l3ZK_F2lrlMGhyt0XBlYbX7hfWY@batyr.db.elephantsql.com/pausapcx";
-    $db_user="root";
+    $db_user="pausapcx";
     $db_password="vxSa5l3ZK_F2lrlMGhyt0XBlYbX7hfWY";
 
     $lnk=mysqli_connect($db_host, $db_user, $db_password);
