@@ -1,10 +1,10 @@
 <?php
     header("Content-type:application/json");
 
-
-    $db_host="localhost";
+    //please dont hack me this is just for fun
+    $db_host="postgres://pausapcx:vxSa5l3ZK_F2lrlMGhyt0XBlYbX7hfWY@batyr.db.elephantsql.com/pausapcx";
     $db_user="root";
-    $db_password="";
+    $db_password="vxSa5l3ZK_F2lrlMGhyt0XBlYbX7hfWY";
 
     $lnk=mysqli_connect($db_host, $db_user, $db_password);
     if(!$lnk) die("No connecty, something wrong: server.php line 8");
