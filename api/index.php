@@ -1,5 +1,6 @@
 <?php
     header("Content-type:application/json");
+    echo "here"
 
     //please dont hack me this is just for fun
 
