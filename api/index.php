@@ -11,7 +11,7 @@
 
     //$lnk=mysqli_connect($db_host, $db_user, $db_password);
     //$lnk = pg_connect("host=localhost dbname=dbname user=username password=password");
-    $lnk = $lnk=mysqli_connect($db_host, $db_host, $db_user, $db_password);
+    $lnk=mysqli_connect($db_host, $db_host, $db_user, $db_password);
     if(!$lnk) die("No connecty");
     //else echo "We've got something"
 
